@@ -8,6 +8,15 @@
     <meta name="description" content="Mohammed Abbas — Creative Web Developer and Graphic Designer. Explore my websites, digital projects, and graphic design portfolio.">
 
     <meta name="author" content="Mohammed Abbas">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://mohammedabbas.vercel.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mohammed Abbas | Web Developer & Graphic Designer">
+    <meta property="og:description" content="Explore selected web development projects and graphic design work by Mohammed Abbas.">
+    <meta property="og:url" content="https://mohammedabbas.vercel.app/">
+    <meta property="og:image" content="https://mohammedabbas.vercel.app/logo.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="logo.png" type="image/png">
 
     <title>Mohammed Abbas | Creative Developer & Graphic Designer</title>
 
@@ -17,6 +26,9 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Person","name":"Mohammed Abbas","url":"https://mohammedabbas.vercel.app/","jobTitle":"Web Developer and Graphic Designer","email":"mailto:abbasmuhammadwallet@gmail.com","sameAs":["https://github.com/mhiztakay4","https://www.tiktok.com/@bhig_beekay"]}
+    </script>
 </head>
 
 <body>
@@ -55,6 +67,8 @@
         <a href="#services">Services</a>
         <a href="#projects">Projects</a>
         <a href="#designs">Graphic Design</a>
+        <a href="#insights">Insights</a>
+        <a href="#faq">FAQ</a>
         <a href="#contact" class="nav-cta">Let's Talk ↗</a>
     </nav>
 
@@ -95,13 +109,8 @@
         </p>
 
         <div class="actions">
-            <a class="btn primary" href="#projects">
-                Explore My Work ↗
-            </a>
-
-            <a class="btn" href="#contact">
-                Let's Talk ↗
-            </a>
+            <a class="btn primary" href="#projects">Explore My Work ↗</a>
+            <a class="btn" href="#inquiry">Start a Project ↗</a>
         </div>
 
         <div class="social">
@@ -201,10 +210,10 @@
                 something clear, polished, and easy to use.
             </p>
 
-            <a class="text-link" href="#contact">
-                Have a project in mind?
-                <b>Let's make it real ↗</b>
-            </a>
+            <div class="about-actions">
+                <a class="btn" href="mailto:abbasmuhammadwallet@gmail.com?subject=Request%20for%20CV">Request My CV ↗</a>
+                <a class="text-link" href="#inquiry">Have a project in mind? <b>Let's make it real ↗</b></a>
+            </div>
 
         </div>
 
@@ -367,12 +376,37 @@
     </div>
 
 
+    <div class="project-filters" role="group" aria-label="Filter projects">
+        <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All Projects</button>
+        <button class="filter-btn" type="button" data-filter="web" aria-pressed="false">Web Development</button>
+        <button class="filter-btn" type="button" data-filter="prototype" aria-pressed="false">Prototypes</button>
+    </div>
+
     <div class="project-grid">
 
 
-        <!-- AGROSENSE -->
+        <!-- NANUS KWASU -->
+        <article class="project reveal" data-category="web">
+            <a class="project-image-link nanus-preview" href="https://officialnanuskwasu.vercel.app" target="_blank" rel="noopener noreferrer" aria-label="Visit NANUS KWASU official website">
+                <span class="nanus-mark">NANUS <small>KWASU</small></span>
+                <span class="preview-caption">OFFICIAL STUDENT ASSOCIATION WEBSITE</span>
+            </a>
+            <div class="project-info">
+                <div>
+                    <small>LIVE STUDENT ASSOCIATION WEBSITE</small>
+                    <h3>NANUS KWASU</h3>
+                    <p>An official digital platform for the association. Explore the live website and its published student-association information and features.</p>
+                    <div class="project-actions">
+                        <a class="mini-btn" href="https://officialnanuskwasu.vercel.app" target="_blank" rel="noopener noreferrer">Visit Website ↗</a>
+                        <a class="mini-btn secondary" href="case-study.html?project=nanus">Case Study</a>
+                    </div>
+                </div>
+                <b>↗</b>
+            </div>
+        </article>
 
-        <article class="project reveal">
+        <!-- AGROSENSE -->
+        <article class="project reveal" data-category="prototype">
 
             <a
                 class="project-image-link"
@@ -407,13 +441,10 @@
                         no physical sensor is connected.
                     </p>
 
-                    <a
-                        class="text-link disabled-link"
-                        href="#"
-                        aria-disabled="true"
-                    >
-                        Live link coming soon
-                    </a>
+                    <div class="project-actions">
+                        <span class="mini-btn unavailable">Preview coming soon</span>
+                        <a class="mini-btn secondary" href="case-study.html?project=campus">Case Study</a>
+                    </div>
 
                 </div>
 
@@ -427,7 +458,7 @@
 
         <!-- MA MEDIA NETWORK -->
 
-        <article class="project reveal">
+        <article class="project reveal" data-category="web">
 
             <a
                 class="project-image-link"
@@ -461,9 +492,11 @@
                         sports, politics, and lifestyle stories.
                     </p>
 
-                    <a
-                        class="text-link"
-                        href="https://mamedianetwork1.netlify.app/"
+                    <div class="project-actions">
+                    <a class="mini-btn" href="https://mamedianetwork1.netlify.app/" target="_blank" rel="noopener noreferrer">Visit Website ↗</a>
+                    <a class="mini-btn secondary" href="case-study.html?project=media">Case Study</a>
+                    </div>
+                    <a class="sr-only" href="https://mamedianetwork1.netlify.app/"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
@@ -482,7 +515,7 @@
 
         <!-- CAMPUS MARKET -->
 
-        <article class="project reveal">
+        <article class="project reveal" data-category="prototype">
 
             <a
                 class="project-image-link"
@@ -514,13 +547,10 @@
                         and connect with buyers.
                     </p>
 
-                    <a
-                        class="text-link disabled-link"
-                        href="#"
-                        aria-disabled="true"
-                    >
-                        Live link coming soon
-                    </a>
+                    <div class="project-actions">
+                        <span class="mini-btn unavailable">Prototype preview</span>
+                        <a class="mini-btn secondary" href="case-study.html?project=agro">Case Study</a>
+                    </div>
 
                 </div>
 
@@ -661,14 +691,71 @@
     </p>
 
 
-    <a
-       <a href="https://wa.me/2348132707897" target="_blank" rel="noopener noreferrer" aria-label="Chat with me on WhatsApp">WA</a>
-    >
-        Explore BEEKAY GRAPHIX ↗
+    <a class="btn outline" href="https://wa.me/2348132707897?text=Hello%20BEEKAY%20GRAPHIX%2C%20I%27d%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener noreferrer">
+        Explore BEEKAY GRAPHIX on WhatsApp ↗
     </a>
 
 </section>
 
+
+<!-- ================= TESTIMONIALS ================= -->
+<section class="wrap section" id="testimonials">
+    <p class="kicker">05 / CLIENT FEEDBACK</p>
+    <h2 class="title">Good work. <span class="gradient">Honest feedback.</span></h2>
+    <div class="testimonial-empty reveal">
+        <span class="quote-mark">“</span>
+        <h3>Your experience matters.</h3>
+        <p class="muted">Client testimonials will be added here as permission-approved feedback becomes available. No reviews are invented or published without consent.</p>
+        <a class="btn" href="https://wa.me/2348132707897?text=Hello%20Mohammed%2C%20I%27d%20like%20to%20share%20feedback%20about%20your%20work." target="_blank" rel="noopener noreferrer">Share Feedback ↗</a>
+    </div>
+</section>
+
+<!-- ================= CREATIVE INSIGHTS ================= -->
+<section class="wrap section" id="insights">
+    <p class="kicker">06 / CREATIVE INSIGHTS</p>
+    <h2 class="title">Ideas behind <span class="gradient">the work.</span></h2>
+    <p class="muted section-intro">Short notes on building useful websites, thoughtful interfaces and clear visual communication.</p>
+    <div class="three insight-grid">
+        <article class="insight-card reveal"><small>WEB DEVELOPMENT · 3 MIN READ</small><h3>Why a mobile-first website matters</h3><p class="muted">A practical look at designing for the screen most people use every day, without sacrificing the desktop experience.</p><a class="text-link" href="insights.html#mobile-first">Read insight <b>↗</b></a></article>
+        <article class="insight-card reveal"><small>DESIGN · 3 MIN READ</small><h3>Good design starts with clarity</h3><p class="muted">How hierarchy, spacing and consistent colour help a design communicate before someone reads every word.</p><a class="text-link" href="insights.html#design-clarity">Read insight <b>↗</b></a></article>
+        <article class="insight-card reveal"><small>PROJECT PROCESS · 4 MIN READ</small><h3>From idea to a useful digital product</h3><p class="muted">A simple process for understanding a problem, planning a solution and improving it through feedback.</p><a class="text-link" href="insights.html#idea-to-product">Read insight <b>↗</b></a></article>
+    </div>
+    <a class="btn outline" href="insights.html">Explore All Insights ↗</a>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="wrap section" id="faq">
+    <p class="kicker">07 / COMMON QUESTIONS</p>
+    <h2 class="title">A few things <span class="gradient">you may ask.</span></h2>
+    <div class="faq-list">
+        <details><summary>What services do you offer?</summary><p>I offer website design and development, graphic design, brand visuals and creative digital project support.</p></details>
+        <details><summary>How do I request a project?</summary><p>Use the project inquiry form below or contact me directly on WhatsApp or email. Share your goals and the type of work you need.</p></details>
+        <details><summary>Do you work with clients remotely?</summary><p>Yes. Project discussions and collaboration can be handled online.</p></details>
+        <details><summary>Can I see examples of your work?</summary><p>Yes. Browse the project gallery and graphic design section above. Live project links are provided where available.</p></details>
+        <details><summary>How much does a project cost?</summary><p>Pricing depends on the project scope, features, timeline and deliverables. Send an enquiry for a discussion and estimate.</p></details>
+    </div>
+</section>
+
+<!-- ================= PROJECT INQUIRY ================= -->
+<section class="contact inquiry-section" id="inquiry">
+    <div class="wrap inquiry-grid">
+        <div>
+            <p class="kicker">08 / START A PROJECT</p>
+            <h2 class="title">Tell me what <span class="gradient">you have in mind.</span></h2>
+            <p class="muted section-intro">Share a few details about your project. When you submit, WhatsApp will open with your enquiry ready to send.</p>
+            <div class="inquiry-quick-links"><a class="btn" href="https://wa.me/2348132707897" target="_blank" rel="noopener noreferrer">WhatsApp Me ↗</a><a class="btn" href="mailto:abbasmuhammadwallet@gmail.com">Email Me ↗</a></div>
+        </div>
+        <form id="inquiryForm" class="inquiry-form">
+            <label for="clientName">Your name</label><input id="clientName" name="name" type="text" autocomplete="name" required maxlength="80" placeholder="Enter your name">
+            <label for="clientEmail">Email address</label><input id="clientEmail" name="email" type="email" autocomplete="email" required maxlength="120" placeholder="you@example.com">
+            <label for="projectType">What do you need?</label><select id="projectType" name="type" required><option value="">Choose a service</option><option>Website design / development</option><option>Graphic design</option><option>Brand identity</option><option>Other creative project</option></select>
+            <label for="budget">Estimated budget (optional)</label><select id="budget" name="budget"><option value="Not specified">Prefer not to say</option><option>Below ₦50,000</option><option>₦50,000 – ₦100,000</option><option>₦100,000 – ₦250,000</option><option>Above ₦250,000</option><option>Let's discuss</option></select>
+            <label for="projectMessage">Tell me about your project</label><textarea id="projectMessage" name="message" rows="5" required maxlength="1500" placeholder="What are you hoping to create?"></textarea>
+            <button class="btn primary form-submit" type="submit">Send Project Enquiry on WhatsApp ↗</button>
+            <p class="form-note" id="formStatus" aria-live="polite">Your details are placed into a WhatsApp message; nothing is submitted to a database.</p>
+        </form>
+    </div>
+</section>
 
 <!-- ================= CONTACT SECTION ================= -->
 
@@ -676,7 +763,7 @@
 
     <div class="wrap">
 
-        <p class="kicker">05 / LET'S CONNECT</p>
+        <p class="kicker">09 / LET'S CONNECT</p>
 
         <h2 class="title">
             Have an idea?<br>
@@ -736,35 +823,18 @@
 
 
 
-            <!-- INSTAGRAM -->
-
-            <a
-                href="https://www.instagram.com/beekay_graphix/"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-
-                <b>IG</b>
-
-                <span>
-                    <small>DESIGN WORK</small>
-
-                    <strong>@beekay_graphix</strong>
-                </span>
-
-                <i>↗</i>
-
+            <!-- WHATSAPP -->
+            <a href="https://wa.me/2348132707897" target="_blank" rel="noopener noreferrer">
+                <b>WA</b><span><small>CHAT DIRECTLY</small><strong>WhatsApp Mohammed</strong></span><i>↗</i>
             </a>
 
         </div>
 
 
-        <a
-            class="btn primary contact-btn"
-            href="mailto:abbasmuhammadwallet@gmail.com?subject=Project%20enquiry"
-        >
-            Start a Conversation ↗
-        </a>
+        <div class="contact-actions">
+            <a class="btn primary contact-btn" href="https://wa.me/2348132707897?text=Hello%20Mohammed%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer">Chat on WhatsApp ↗</a>
+            <a class="btn contact-btn" href="mailto:abbasmuhammadwallet@gmail.com?subject=Project%20enquiry">Send an Email ↗</a>
+        </div>
 
     </div>
 

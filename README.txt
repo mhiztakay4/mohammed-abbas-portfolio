@@ -1,28 +1,31 @@
-MOHAMMED ABBAS — PORTFOLIO V2
+MOHAMMED ABBAS — PREMIUM PORTFOLIO UPGRADE
 
 Files:
-- index.html: website content
-- style.css: design, responsiveness, animations
-- script.js: mobile menu, reveal animations, current year
+- index.html: Main portfolio website
+- style.css: Main styling and responsive layout
+- script.js: Navigation, project filters, reveal effects and WhatsApp inquiry form
+- case-study.html: Dynamic case studies for NANUS KWASU, MA Media Network, AgroSense Nigeria and Campus Market
+- insights.html: Creative insights/blog articles
+- logo.png, profile-photo.png and project/design images: Site media assets
 
-OPEN ON ANDROID / SPCK EDITOR:
-1. Download and extract this ZIP.
-2. Import/open the extracted folder in Spck Editor.
-3. Open index.html and tap Preview.
-4. Keep all three files in the same folder.
+DEPLOYMENT
+1. Extract this ZIP.
+2. Upload the contents of the folder to the root of your existing Vercel project (keep all image files beside index.html).
+3. Redeploy the project on Vercel.
 
-BEFORE PUBLISHING:
-- The MA portrait area is a placeholder; replace it with your own photo if you want.
-- Graphic design cards are style previews; replace with your actual designs.
-- Project cards are labelled as concepts/prototypes where appropriate. Add real links when ready.
-- No fake CV download button or fabricated testimonials are included.
-- Your phone number is not displayed publicly.
-- This version excludes data analysis.
+FUNCTIONAL NOTES
+- Project category filters work in the browser.
+- Case Study buttons open case-study.html with the selected project.
+- Project inquiry form opens WhatsApp with the enquiry prefilled. The form does not store submissions in a database or send email automatically.
+- The CV button opens an email request because a verified downloadable CV file has not yet been supplied.
+- Testimonials are not fabricated; the section invites genuine feedback with permission.
+- Google Analytics is not activated because a Measurement ID has not been provided. Add the real ID before enabling analytics.
+- NANUS KWASU live URL: https://officialnanuskwasu.vercel.app
+- MA Media Network live URL: https://mamedianetwork1.netlify.app/
+- AgroSense is clearly labelled as a prototype with simulated readings and no connected physical sensor.
+- Campus Market is clearly labelled as a concept/in-development project without a public link.
 
-
-UPDATED PORTFOLIO MEDIA
-- Your profile photo is in assets/profile-photo.png.
-- Real screenshots and graphic designs are stored in the assets folder.
-- MA Media Network opens at https://mamedianetwork1.netlify.app/.
-- AgroSense Nigeria and Campus Market buttons are marked “Live link coming soon” until their public URLs are supplied.
-- The AgroSense description identifies it as a prototype with simulated readings.
+CONTACT DETAILS CURRENTLY USED
+WhatsApp: +2348132707897
+Email: abbasmuhammadwallet@gmail.com
+GitHub: https://github.com/mhiztakay4
